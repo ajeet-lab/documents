@@ -1,7 +1,6 @@
 <b>Step I:</b> Open the Command Prompt in the folder where you want to create the project and run the given command.</br>
-<style="background-color: #FFFF00" >
 mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -DarchetypeArtifactId=camel-archetype-spring-boot -DarchetypeVersion=3.12.0 -DgroupId=com.tatacapital.loans -DartifactId=ESBTataCapitalLoans -Dversion=1.0-SNAPSHOT -DinteractiveMode=false
-</style>
+
 
 <b>Step II:</b> Create a file inside the resource folder "spring/camel-context.xml" and paste the given content.</br>
 <?xml version="1.0" encoding="UTF-8"?>
@@ -20,12 +19,8 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -Darchetyp
 
 
 <b>Step III:</b> Import the camel-context.xml file into the main Java file</br>
-<style="background-color: #FFFF00" >
 @ImportResource({"classpath:spring/camel-context.xml"})
-</style>
 
 
 <b>Step I:</b> Now run our program</br>
-<style="background-color: #FFFF00" >
 mvn spring-boot:run
-<style>
