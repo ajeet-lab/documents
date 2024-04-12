@@ -88,4 +88,50 @@ DataSource dataSource;
 DataSource dataSource;
 
 
+
+
+
+### Spring DSL OR Bluepring
+<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"
+			value="com.mysql.cj.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/tata_capital" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+</bean>
+<bean id="sqlComponent"
+		class="org.apache.camel.component.sql.SqlComponent">
+		<property name="dataSource" ref="dataSource" />
+</bean>
+
+
+
+
+### Dependencies
+<!-- Start Database dependency-->
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>commons-dbcp</groupId>
+	<artifactId>commons-dbcp</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>org.apache.camel</groupId>
+	<artifactId>camel-sql</artifactId>
+</dependency>
+
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+	<version>8.0.22</version>
+</dependency>
+<!-- End Database dependency-->
+
+
 ref: https://howtodoinjava.com/spring-boot2/datasource-configuration/
