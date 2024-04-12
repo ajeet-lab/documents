@@ -5,16 +5,18 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -Darchetyp
 <b>Step II:</b> Create a file inside the resource folder "spring/camel-context.xml" and paste the given content.</br>
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:spring="http://camel.apache.org/schema/spring"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+						http://camel.apache.org/schema/spring https://camel.apache.org/schema/spring/camel-spring-2.23.3.xsd">
 
 
-    <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
-        <route>
-            <from uri="timer:foo?period=3000" />
-            <log message="Hello world" />
-        </route>
-    </camelContext>
+	<camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+		<route>
+			<from uri="timer:foo?period=3000" />
+			<log message="Hello world" />
+		</route>
+	</camelContext>
+
 </beans>
 
 
