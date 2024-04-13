@@ -26,7 +26,7 @@
     }
 ]
 ```
-<p><b>API JSON to CSV : </b> file:work/output?fileName=Give_Your_FileName&amp;noop=true</p>
+<p><b>API CSV to JSON : </b> file:work/output?fileName=Give_Your_FileName&amp;noop=true</p>
 
 ```
 userId,id,todo,completed
