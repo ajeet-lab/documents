@@ -52,11 +52,6 @@ userId,id,todo,completed
 
 
 ### Spring DSL configuration
- * #### Import the class that we are using to convert JSON to CSV and CSV to JSON, and the "User" class defined below
-
-```
-<bean id="jsonToCsv2" class="com.json.csv.User"/>
-```
 
 * #### JSON to CSV
 
@@ -103,8 +98,9 @@ userId,id,todo,completed
        <log message="Successfully created json" />
 </route>
 ```
+<p>In the above code, I have used <b>unmarshalType</b> inside the unmarshal and <b>classType</b> inside the Bindy EIP, both of which take a <b>User class</b> reference for unmarshalling and marshalling. <b>User class</b> defined below</p>
 
-* #### User.class - It will be use for both Rest DSL Java and Spring
+* <b>User.class - </b> It will be use for both Rest DSL Java and Spring
 
 ```
 package com.json.csv; // Change your package name
