@@ -20,7 +20,7 @@ mvn archetype:generate -DarchetypeGroupId=org.apache.camel.archetypes -Darchetyp
 		</route>
 	</camelContext>
 
-</beans></b>
+</beans>
 ```
 
 <b>Step III:</b> Import the camel-context.xml file into the main Java file</br>
