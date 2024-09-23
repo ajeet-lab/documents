@@ -1,8 +1,8 @@
 Here’s a comparison between REST API and SOAP API in tabular format:
 
-![Example Image](RestvsSoap1.png)
-![Example Image](RestvsSoap2.png)
-![Example Image](RestvsSoap3.png)
+![Example Image](./images/RestvsSoap1.png)
+![Example Image](./images/RestvsSoap2.png)
+![Example Image](./images/RestvsSoap3.png)
 
 
 

@@ -42,3 +42,20 @@ Here’s a comparison of Spring Boot and Quarkus in simple terms:
    - **Quarkus**: Supports migration but may require more effort if switching from Spring Boot because of different approaches to coding and configurations. 
 
 In summary, **Spring Boot** is well-established with a mature ecosystem, while **Quarkus** is optimized for cloud-native and serverless environments with a focus on fast startup and low memory usage. The choice between the two depends on your application's requirements and infrastructure.
+
+
+
+
+Here’s a comparison between **Spring Boot** and **Quarkus** in tabular format:
+
+
+### **Short Definitions:**
+
+- **Spring Boot**: A Java framework used for building production-ready, stand-alone applications with ease, leveraging the Spring ecosystem and providing extensive features for enterprise and microservice applications.
+
+- **Quarkus**: A Java framework optimized for Kubernetes and cloud-native environments, designed to have fast startup times and low memory usage, particularly when compiled to native images using GraalVM.
+
+
+
+
+
