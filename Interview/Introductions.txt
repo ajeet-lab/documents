@@ -1,0 +1,7 @@
+Hello, I’m Ajeet Kushwaha. I have 2.5 years of experience working with Apache Camel, and I’ve had the opportunity to work on significant projects in two different companies. Previously, I worked at Coforge LTD on the Indigo Airlines project, where I was responsible for Gethering Requirmenet, designing and developing integration solutions to streamline airline operations, handle large-scale data processing, and integrate with external systems such as APIs and databases.
+
+Currently, I’m with Integra Micro Software Services, working on the Tata Capital project. Here, I focus on integrating financial services and ensuring efficient, secure data flow between different systems. I’ve handled complex routing solutions, including message transformation, error handling, and performance tuning to optimize the system's speed and reliability.
+
+At both companies, I’ve successfully improved system performance and contributed to seamless integration solutions. For example, in the Indigo Airlines project, I optimized the data processing pipeline, reducing operational delays by 25%. I’ve worked extensively with various Apache Camel components, including JMS, REST, and database integrations.
+
+I’m excited about this opportunity as it aligns with my passion for creating robust integration systems. I look forward to leveraging my experience to contribute to innovative projects at your organization."

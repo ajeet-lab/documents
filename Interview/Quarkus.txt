@@ -1,0 +1,19 @@
+What is Quarkus?
+Quarkus is a Kubernetes-native Java framework tailored specifically for cloud-native applications, microservices, and serverless architectures. It aims to optimize Java for low memory usage and fast startup times, which are critical in modern cloud environments, especially for containerized applications.
+
+Key Features:
+-Native Compilation: Quarkus can compile Java applications into native machine code using GraalVM, resulting in extremely fast startup times and reduced memory footprint.
+-Kubernetes Native: It has built-in support for Kubernetes, enabling seamless integration with cloud platforms and containers.
+-Reactive Programming: Quarkus provides excellent support for reactive programming, offering both imperative and reactive styles.
+-Developer Experience: It includes features like live coding, allowing developers to see changes in real-time without restarting the application.
+-Microservices Friendly: With support for standards like MicroProfile, Quarkus is highly suited for building microservices.
+-Unified Configuration: Quarkus provides a single configuration mechanism across all frameworks, making it easier to manage settings.
+-Small Memory Footprint: It's optimized for minimal resource usage, which is ideal for environments like containers and serverless platforms.
+
+How Does Quarkus Work?
+Quarkus follows a container-first philosophy, meaning it is optimized for creating applications that work well in containers. Here's how it works:
+
+Ahead of Time Compilation (AOT): Quarkus compiles most of the application's logic during build time (rather than runtime), reducing the load during the startup phase.
+-GraalVM Native Image: Quarkus can compile applications into native executables with GraalVM. This dramatically improves startup time (down to milliseconds) and reduces memory usage, perfect for microservices and cloud deployments.
+-Hot-reload (Live Coding): It supports live reload, allowing developers to make code changes and see the effect immediately without restarting the server.
+-Supports Multiple Frameworks: It can integrate seamlessly with existing Java EE (Jakarta EE), Hibernate, RESTEasy, and others, while offering additional tools for optimizing them in a microservice-based architecture.
