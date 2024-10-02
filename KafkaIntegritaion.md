@@ -1,4 +1,4 @@
-# STEP 1: GET KAFKA OR DOWNLOAD KAFKA
+## STEP 1: GET KAFKA OR DOWNLOAD KAFKA
 <a href="https://kafka.apache.org/downloads" target="_blank">Download</a> the latest Kafka release and extract it:
 
 
@@ -12,7 +12,7 @@ cd kafka
 Extract file manually and rename 'kafka_2.13-3.7.0' to 'kafka'
 ```
 
-# Step 2: START THE KAFKA ENVIRONMENT
+## Step 2: START THE KAFKA ENVIRONMENT
 First of all, we should navigate to the Kafka directory and execute the commands below in the terminal.
 ### # Start the ZooKeeper service
 * **For Linux/Ubuntu and Macos**
@@ -36,7 +36,7 @@ bin\windows\kafka-server-start.bat config/server.properties
 ```
 Once all services have successfully launched, you will have a basic Kafka environment up and running, ready to be used
 
-# STEP 3: CREATE A TOPIC TO STORE YOUR EVENTS
+## STEP 3: CREATE A TOPIC TO STORE YOUR EVENTS
 So, before you can write your first events, you must create a topic. Open another terminal session and execute the following command:
 
 * **For Linux/Ubuntu and Macos**
@@ -49,7 +49,7 @@ bin/kafka-topics.sh --create --topic your-topic-name --bootstrap-server localhos
 bin\windows\kafka-topics.bat --create --topic your-topic-name --bootstrap-server localhost:9092
 ```
 
-# STEP 4: WRITE SOME EVENTS INTO THE TOPIC
+## STEP 4: WRITE SOME EVENTS INTO THE TOPIC
 A Kafka client communicates with the Kafka brokers over the network for writing (or reading) events. Once received, the brokers store the events in a durable and fault-tolerant manner for as long as necessary, even indefinitely.
 
 Execute the console producer client to write a few events into your topic. By default, each line you enter will produce a separate event in the topic.
@@ -63,7 +63,7 @@ bin/kafka-console-producer.sh --topic your-topic-name --bootstrap-server localho
 bin\windows\kafka-console-producer.bat --topic your-topic-name --bootstrap-server localhost:9092
 ```
 
-# STEP 5: READ THE EVENTS
+## STEP 5: READ THE EVENTS
 Open another terminal session and execute the console consumer client to read the events you just created:
 * **For Linux/Ubuntu and Macos**
 ```
