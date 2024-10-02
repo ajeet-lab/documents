@@ -1,4 +1,4 @@
-# STEP 1: GET KAFKA OR DOWNLOAD KAFKA
+## STEP 1: GET KAFKA OR DOWNLOAD KAFKA
 <a href="https://kafka.apache.org/downloads" target="_blank">Download</a> the latest Kafka release and extract it:
 
 
@@ -208,6 +208,7 @@ In this configuration:
 
 
 # KAFKA INTEGRATION WITH SPRINGBOOT-CAMEL PROJECT
+<<<<<<< HEAD
 GIT Code URL: <a href="https://github.com/ajeet-lab/springboot-microservices/tree/master/KafkaIntegration" target="_blank">Click Here for Implementation code</a>
 
 To implement **all Kafka options** in a **Spring Boot-Camel project**, you need to configure multiple options such as Kafka producers, consumers, serialization, deserialization, topics, error handling, and Kafka-specific settings like partitions, offsets, retries, etc.
@@ -442,3 +443,5 @@ For monitoring Kafka in Camel, you can use **Camel Metrics** or integrate **Spri
 10. **pollTimeoutMs**: Polling timeout.
 
 By configuring these options, you can fine-tune your Kafka consumer and producer behavior in a **Spring Boot-Camel** project.
+=======
+>>>>>>> 49435a652837d863a107db63173f01ca4fea0a58
